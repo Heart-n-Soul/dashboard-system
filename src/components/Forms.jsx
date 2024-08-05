@@ -1,6 +1,6 @@
 import Button from "./Button";
 import InputField from "./InputField";
-// import "../assets/css/input.css";
+import "../assets/css/input.css";
 
 function LoginForm() {
   return (
@@ -17,7 +17,12 @@ function LoginForm() {
           Password
         </label>
       </div>
-      <Button bgColor="bg-primary-2" typography="text-white mb-4 mt-4 font-poppins rounded-[20px] w-full">Login</Button>
+      <Button
+        bgColor="bg-primary-2"
+        typography="text-white mb-4 mt-4 font-poppins rounded-[20px] w-full"
+      >
+        Login
+      </Button>
       <p className="font-medium text-primary-2 text-base leading-6 font-poppins">
         <a href="#">Forgot Password?</a>
       </p>

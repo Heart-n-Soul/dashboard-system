@@ -16,10 +16,12 @@ module.exports = {
         "secondary-2": "#909090",
         "secondary-3": "#D8D8D8",
         "secondary-4": "#EEEEEE",
-        "chart-up": "#82FF804D",
-        "chart-down": "#FF8080",
       },
     },
+    backgroundImage: {
+      "linear-grad": "linear-gradient(90deg, #DF1EFF -28.65%, #FFC93E 100%)",
+    },
   },
+
   plugins: [],
 };
