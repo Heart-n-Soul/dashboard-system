@@ -1,6 +1,6 @@
-function Button({ children, bgColor, typography }) {
+function Button({ children, onClick, bgColor, typography }) {
   return (
-    <button className={`px-3 py-2 md:px-6 md:py-2  ${bgColor} ${typography}`}>
+    <button onClick={onClick} className={`px-3 py-2 md:px-6 md:py-2  ${bgColor} ${typography}`}>
       {children}
     </button>
   );

@@ -7,8 +7,28 @@ import ava5 from "../assets/images/ava5.jpg";
 
 // w-10 h-10 rounded-full border-2 border-white -ml-2 first:ml-0
 
-const CampaigneCard = ({ title, status }) => {
-    
+const CampaigneCard = ({
+  title,
+  status,
+  id,
+  lastUpdated,
+  startDate,
+  endDate,
+  onEdit,
+}) => {
+//Determine the progress bar color and width based on the status
+
+  let progressBarColor = "bg-gray-500"; // Default for Draft
+  let progressBarWidth = "w-0"; // Default for Draft (no progress)
+
+  if (status === "In Progress") {
+    progressBarColor = "bg-green-500";
+    progressBarWidth = "w-1/3";
+  } else if (status === "Complete") {
+    progressBarColor = "bg-green-500";
+    progressBarWidth = "w-full";
+  }
+
   return (
     <div className=" border rounded-md p-5">
       <div className="flex justify-between mb-3">
@@ -39,13 +59,19 @@ const CampaigneCard = ({ title, status }) => {
             className="w-6 h-6 hidden sm:block rounded-full border-2 border-white -mr-2 last:mr-0"
           />
         </figure>
-        <div className="flex text-sm items-center gap-2">
-          <TbEdit />
+        <div className="flex cursor-pointer  text-sm items-center gap-2">
+          <TbEdit
+            onClick={() =>
+              onEdit({ title, status, id, lastUpdated, startDate, endDate })
+            }
+          />
           <p className="hidden sm:block">Edit</p>
         </div>
       </div>
-      <p>{title}</p>
-      <p className="text-[10px] mb-1 mt-2">Status: <span className="text-secondary-2">{status}</span></p>
+      <p className="text-sm">{title}</p>
+      <p className="text-[10px] mb-1 text-secondary-2 mt-2">
+        Status: <span className=" text-black ">{status}</span>
+      </p>
       {/* w-1/3 
       w-full 
       w-0 
@@ -53,14 +79,14 @@ const CampaigneCard = ({ title, status }) => {
       bg-green-500 */}
       <div className="mb-3">
         <div className="w-full bg-gray-300 rounded-full h-2">
-          {/* <div
-            className={`${progressColor} h-2 rounded-full ${progressWidth}`}
-          ></div> */}
+          <div
+            className={`${progressBarColor} h-2 rounded-full ${progressBarWidth}`}
+          ></div>
         </div>
       </div>
 
-      <p className="text-[10px]">
-        Last Updated: <span>{}</span>
+      <p className="text-[10px] text-secondary-2">
+        Last Updated: <span className="text-black">{lastUpdated}</span>
       </p>
     </div>
   );
