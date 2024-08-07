@@ -1,8 +1,13 @@
-# React + Vite
+# Dashboard System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This system is built with React, tailwind, and the state is managed with redux
+It has the login page and the dashboard
+Use the login credentials:
+e-mail: example@gmail.com
+password: 123456788
 
-Currently, two official plugins are available:
+to log in.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create a new campaign cards in the dashboard, update them, and delete them
+
+STILL IN PROGRESS
