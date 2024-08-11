@@ -5,7 +5,6 @@ import ava3 from "../assets/images/ava3.jpg";
 import ava4 from "../assets/images/ava4.jpg";
 import ava5 from "../assets/images/ava5.jpg";
 
-// w-10 h-10 rounded-full border-2 border-white -ml-2 first:ml-0
 
 const CampaigneCard = ({
   title,
@@ -72,11 +71,7 @@ const CampaigneCard = ({
       <p className="text-[10px] mb-1 text-secondary-2 mt-2">
         Status: <span className=" text-black ">{status}</span>
       </p>
-      {/* w-1/3 
-      w-full 
-      w-0 
-      bg-gray-500 
-      bg-green-500 */}
+      
       <div className="mb-3">
         <div className="w-full bg-gray-300 rounded-full h-2">
           <div

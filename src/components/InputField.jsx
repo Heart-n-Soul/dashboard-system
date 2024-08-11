@@ -1,5 +1,4 @@
-// src/components/InputField.jsx
-import React from 'react';
+import React from "react";
 
 function InputField({ type, placeholder, className, value, onChange }) {
   return (
@@ -14,4 +13,3 @@ function InputField({ type, placeholder, className, value, onChange }) {
 }
 
 export default InputField;
-

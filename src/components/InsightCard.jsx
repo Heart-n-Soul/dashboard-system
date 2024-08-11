@@ -1,12 +1,6 @@
 import { FaArrowTrendDown } from "react-icons/fa6";
 import { FaArrowTrendUp } from "react-icons/fa6";
-// width: Fixed (320px)px;
-// height: Hug (192px)px;
-// padding: 24px 0px 0px 0px;
-// gap: 8px;
-// border-radius: 8px 0px 0px 0px;
-// border: 1px 0px 0px 0px;
-// opacity: 0px;
+
 
 const InsightCard = ({
   title,

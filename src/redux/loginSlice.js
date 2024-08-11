@@ -1,4 +1,3 @@
-// src/redux/loginSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {

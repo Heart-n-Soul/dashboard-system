@@ -1,4 +1,3 @@
-// src/components/LoginForm.jsx
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setEmail, setPassword, validateForm } from "../redux/loginSlice";
