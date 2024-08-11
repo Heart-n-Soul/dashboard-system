@@ -3,7 +3,6 @@ import LoginHeader from "../components/LoginHeader";
 import LoginImage from "../components/LoginImage";
 
 function Login() {
-  // const baseStyle = "flex flex-col items-center justify-center h-screen";
   return (
     <div className="flex px-6 pt-8">
       <div className="hidden md:block w-6/12">
